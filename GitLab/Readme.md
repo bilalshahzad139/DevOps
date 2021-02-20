@@ -26,6 +26,8 @@ Here is quick step by step guide with some default configuration.
  - Start containers
    > docker-compose up -d
  - It may take around 5 to 10 minutes. You may check logs to check the setup progress
-   > docker logs gitlabsetup_web_1 --tail 10
+   > docker logs gitlab --tail 10
 - Check https://gitlab.test.com in browser
 - Once it is online, it will ask for password of **root** user
+- We often need to restart gitlab services after making any changes. **gitlab-ctl reconfigure** command is used for this.
+  > docker exec gitlab gitlab-ctl reconfigure

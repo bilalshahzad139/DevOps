@@ -19,6 +19,7 @@ Here is quick step by step guide with some default configuration.
 - Move certificate files (e.g. wildcard.crt & wildcard.key) to /data/gitlab/configure/ssl directory
 - We need to set GITLAB_HOME environment variable. Let's do it permanently
   > touch /etc/profile.d/gitlab_home.sh
+  
   > vi /etc/profile.d/gitlab_home.sh
 - Add following in gitlab_home.sh file
   > export GITLAB_HOME=/data/gitlab

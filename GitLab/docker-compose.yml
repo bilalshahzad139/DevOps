@@ -1,0 +1,21 @@
+web:
+  image: 'gitlab/gitlab-ce:latest'
+  container_name: gitlab
+  restart: always
+  hostname: 'gitlab.test.com'
+  environment:
+    GITLAB_OMNIBUS_CONFIG: |
+      external_url 'https://gitlab.test.com'
+      letsencrypt['enable'] = false
+      nginx['redirect_http_to_https'] = true
+      nginx['ssl_certificate'] = "/etc/gitlab/ssl/wildcard.crt"
+      nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/wildcard.key"
+      # Add any other gitlab.rb configuration here, each on its own line
+  ports:
+    - '10.10.10.1:80:80'
+    - '10.10.10.1:443:443'
+    - '10.10.10.1:2222:22'
+  volumes:
+    - '$GITLAB_HOME/config:/etc/gitlab'
+    - '$GITLAB_HOME/logs:/var/log/gitlab'
+    - '$GITLAB_HOME/data:/var/opt/gitlab'

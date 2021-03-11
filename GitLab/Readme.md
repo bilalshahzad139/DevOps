@@ -32,3 +32,8 @@ Here is quick step by step guide with some default configuration.
 - Once it is online, it will ask for password of **root** user
 - We often need to restart gitlab services after making any changes. **gitlab-ctl reconfigure** command is used for this.
   > docker exec gitlab gitlab-ctl reconfigure
+
+- To Auto Start Docker on Reboot
+  > sudo systemctl enable docker
+  > sudo systemctl start docker
+  > sudo systemctl enable /usr/lib/systemd/system/docker.service  

@@ -35,5 +35,7 @@ Here is quick step by step guide with some default configuration.
 
 - To Auto Start Docker on Reboot
   > sudo systemctl enable docker
+  
   > sudo systemctl start docker
+  
   > sudo systemctl enable /usr/lib/systemd/system/docker.service  

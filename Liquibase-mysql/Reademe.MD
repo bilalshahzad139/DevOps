@@ -5,7 +5,8 @@
 	- It includes everything you need to run Liquibase (including Java) to make getting started easier than ever.
 - **Option 2:** Download only Liquiabase files
 		- Install Java separately
-			- https://www.oracle.com/java/technologies/javase-downloads.html 
+			- https://www.oracle.com/java/technologies/javase-downloads.html
+			- https://jdk.java.net/archive/ 
 		- Download Liquiabase zip file, extract it somewhere and add liquibase.bat in Path enviornment variable so we can use it anywhere.
 - You may also follow this tutorial to setup liquibase
 	- https://docs.liquibase.com/concepts/installation/installation-windows.html

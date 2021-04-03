@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"> 
+
+    <changeSet id="create_teacher_table" author="bilal">
+        <sqlFile path="sprint1/change1.sql" stripComments="true" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet id="create_person_table" author="bilal">
+        <sqlFile endDelimiter="//" path="sprint1/change2.sql" stripComments="true" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet id="create_sp" author="bilal">
+        <sqlFile endDelimiter="//" path="sprint1/change3.sql" stripComments="true" relativeToChangelogFile="true"/>
+    </changeSet>
+
+</databaseChangeLog>

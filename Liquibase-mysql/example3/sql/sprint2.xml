@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"> 
+
+    <changeSet id="alter_person_table" author="bilal">
+        <sqlFile path="sprint2/change1.sql" stripComments="true" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet id="modify_procedure_1123" author="bilal">
+        <sqlFile endDelimiter="//" path="sprint2/change2.sql" stripComments="true" relativeToChangelogFile="true"/>
+    </changeSet>
+
+</databaseChangeLog>

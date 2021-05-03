@@ -86,3 +86,10 @@
 	- ```<include  file="sql/sprint1.xml"/>```
 	- ```<include  file="sql/sprint2.xml"/>```
 - sprint1.xml files contain detail of changesets (as we've seen in example 2)
+
+## Example 4: Using runOnChange for procedures
+- Use different folders in sql for different objects, for example
+  - procedures: One file per SP (create or alter). runOnChange=true will be used for these changesets.
+  - tables: One file per table
+  - functions: One file per function
+  - others: For any other changes (alter column, alter index etc.)

@@ -1,0 +1,1 @@
+alter table person alter column city varchar(50);

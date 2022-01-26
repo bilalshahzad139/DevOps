@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"> 
+
+    <changeSet id="create_teacher_table" author="bilal">
+        <sqlFile path="/sql/create_teacher_table.sql" stripComments="true" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet id="create_my_stored_proc" author="bilal">
+        <sqlFile endDelimiter="GO" path="/sql/my_stored_proc2.sql" stripComments="true" relativeToChangelogFile="true"/>
+    </changeSet>
+
+</databaseChangeLog>

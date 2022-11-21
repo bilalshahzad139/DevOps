@@ -23,6 +23,12 @@
 	- Check examples
 - Reference: https://docs.liquibase.com/workflows/database-setup-tutorials/mssql.html
 
+### Step 4: Download Required Dll - :
+- Download the dll https://github.com/microsoft/mssql-jdbc/releases from the assests section
+- place the dll in Liquibase folder under the Liquibase/jre/bin folder 
+[reference here](https://github.com/bilalshahzad139/DevOps/issues/2)
+
+
 ## How to Run
 - Go to specific liquibase project directory (e.g. example1)
 	 - Server Instance is **localhost\SQLEXPRESS2019**

@@ -28,7 +28,7 @@
 	 - Server Instance is **localhost\SQLEXPRESS2019**
 	 - Database Name is **test**
 - We've added following (as default) configuration in liquibase.properties file. If we don't provide these parameters with command, default value will be used from properties file.
-	- url=jdbc:sqlserver://localhost\\SQLEXPRESS2019:1433;database=test
+	- url=jdbc:sqlserver://localhost\\SQLEXPRESS2019:1433;encrypt=false;database=test
 	- username=sa
 	- password=P@ssword1
 	- liquibase.hub.mode=off
